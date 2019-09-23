@@ -1,8 +1,12 @@
 require "pry"
 
-array = ["Ruby", "Javascript", "Python", "Objective-C"]
 def my_collect(array)
-  my_collect(array) do |language|
-    language.split(" ").each
+  i = 0 
+  collection = []
+  while i < array.length 
+  collection.push yield(array[i])
+  i += 1
+  end
+  collection
 end
 
