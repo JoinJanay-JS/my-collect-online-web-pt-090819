@@ -1,3 +1,5 @@
-def my_collect
+require "pry"
+
+def my_collect(array)
 end
 
